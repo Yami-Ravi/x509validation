@@ -68,12 +68,12 @@ public class FirstClass {
                for (int i = 0; i < servercerts.size(); i++) 
                    servercerts.get(i).checkValidity(); 
                
-			    // Path validation 
+	        // Path validation 
                 //Check certificate revocation using OSCP 
-			    //Generate path
-				//Validate the path
+		//Generate path
+		//Validate the path
              
-				// check if the CA used hasn't expired 
+		// check if the CA used hasn't expired 
                 validatorParams = new PKIXParameters(anchors);
                 validatorParams.setRevocationEnabled(true);
 
